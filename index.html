@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoodBank - Share Food. Reduce Waste. Feed Hope.</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Custom Shared CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement-bar">
+    <span><i class="fa-solid fa-leaf me-1 text-warning"></i> Over <strong>10,000+</strong> meals saved this month! Every meal counts.</span>
+    <a href="donate.html">Donate Extra Food Now &rarr;</a>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg main-navbar">
+    <div class="container">
+      <a class="navbar-brand navbar-brand-logo" href="index.html">
+        <div class="brand-icon-box">
+          <i class="fa-solid fa-hand-holding-heart"></i>
+        </div>
+        <span>FOOD<span class="brand-accent-text">BANK</span></span>
+      </a>
+
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMainContent" aria-controls="navbarMainContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarMainContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html"><i class="fa-solid fa-house-chimney me-1 small"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="donate.html">Donate Food</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="find-food.html">Find Food</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="how-it-works.html">How It Works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <div class="d-flex align-items-center gap-2">
+          <a href="login.html" class="btn btn-food-outline px-3 py-2">
+            <i class="fa-regular fa-user"></i> Login
+          </a>
+          <a href="donate.html" class="btn btn-food-primary px-3 py-2">
+            <i class="fa-solid fa-plus-circle"></i> Donate Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <div class="hero-pill-tag">
+            <span class="pulse-dot"></span>
+            <span>Fighting Hunger &amp; Food Wastage</span>
+          </div>
+          <h1 class="hero-title">
+            Turn Surplus Food Into <span class="highlight-green">Someone’s Meal</span>
+          </h1>
+          <p class="hero-subtitle">
+            FoodBank connects food donors with NGOs and communities to reduce food waste and help people in need.
+          </p>
+          <div class="d-flex flex-wrap gap-3 pt-2">
+            <a href="donate.html" class="btn btn-food-primary btn-lg shadow">
+              <i class="fa-solid fa-hand-holding-heart"></i> Donate Food
+            </a>
+            <a href="find-food.html" class="btn btn-food-accent btn-lg shadow">
+              <i class="fa-solid fa-magnifying-glass"></i> Find Food
+            </a>
+          </div>
+          <div class="d-flex align-items-center gap-3 mt-4 pt-3 border-top">
+            <div class="d-flex">
+              <span class="badge bg-success-subtle text-success p-2 rounded-circle me-2"><i class="fa-solid fa-shield-halved"></i></span>
+            </div>
+            <span class="small text-muted"><strong>100% Free &amp; Non-Profit</strong> · Verified Partner NGOs · Safe &amp; Hygienic Pickup</span>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="hero-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=800&q=80" alt="Volunteers distributing fresh food" class="hero-main-img shadow-lg">
+
+            <!-- Floating Stat 1 -->
+            <div class="hero-floating-card floating-card-1">
+              <div class="floating-icon-circle">
+                <i class="fa-solid fa-bowl-rice"></i>
+              </div>
+              <div>
+                <div class="fw-bold text-dark fs-6">10,000+ Meals</div>
+                <div class="small text-muted">Distributed to shelter homes</div>
+              </div>
+            </div>
+
+            <!-- Floating Stat 2 -->
+            <div class="hero-floating-card floating-card-2">
+              <div class="floating-icon-circle floating-icon-orange">
+                <i class="fa-solid fa-truck-fast"></i>
+              </div>
+              <div>
+                <div class="fw-bold text-dark fs-6">&lt; 45 Mins Pickup</div>
+                <div class="small text-muted">Average volunteer response</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistics Section -->
+  <section class="stats-counter-section">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-6 col-md-3">
+          <div class="stat-counter-box">
+            <div class="stat-number">10,000<span class="accent">+</span></div>
+            <div class="stat-label">Meals Donated</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-counter-box">
+            <div class="stat-number">2,500<span class="accent">+</span></div>
+            <div class="stat-label">Active Donors</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-counter-box">
+            <div class="stat-number">120<span class="accent">+</span></div>
+            <div class="stat-label">Partner NGOs</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-counter-box">
+            <div class="stat-number">8,500<span class="accent">+</span></div>
+            <div class="stat-label">People Helped</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How FoodBank Works Section -->
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Simple &amp; Transparent</span>
+        <h2 class="section-title">How FoodBank Works</h2>
+        <p class="section-description">Connecting generous food donors with local non-profits in just four easy steps.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-step-card text-center">
+            <span class="step-badge-number">01</span>
+            <div class="card-icon-bubble bubble-green mx-auto">
+              <i class="fa-solid fa-utensils"></i>
+            </div>
+            <h4 class="fw-bold mb-2">1. Donate</h4>
+            <p class="text-muted small">
+              Individuals, caterers, or restaurants list their surplus edible food with quantity and pickup address.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-step-card text-center">
+            <span class="step-badge-number">02</span>
+            <div class="card-icon-bubble bubble-orange mx-auto">
+              <i class="fa-solid fa-network-wired"></i>
+            </div>
+            <h4 class="fw-bold mb-2">2. Connect</h4>
+            <p class="text-muted small">
+              Our smart network instantly alerts verified local NGOs, volunteers, and hunger-relief organizations.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-step-card text-center">
+            <span class="step-badge-number">03</span>
+            <div class="card-icon-bubble bubble-green mx-auto">
+              <i class="fa-solid fa-truck-pickup"></i>
+            </div>
+            <h4 class="fw-bold mb-2">3. Collect</h4>
+            <p class="text-muted small">
+              NGO volunteers arrive at the location, verify freshness guidelines, and collect the food packaging safely.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-step-card text-center">
+            <span class="step-badge-number">04</span>
+            <div class="card-icon-bubble bubble-orange mx-auto">
+              <i class="fa-solid fa-hands-holding-child"></i>
+            </div>
+            <h4 class="fw-bold mb-2">4. Share</h4>
+            <p class="text-muted small">
+              Hot meals are delivered with dignity to community shelters, orphanages, and underprivileged families.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="how-it-works.html" class="btn btn-food-subtle">
+          Learn More About Our Process <i class="fa-solid fa-arrow-right ms-1"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why FoodBank Section -->
+  <section class="section-padding section-subtle">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Impact &amp; Purpose</span>
+        <h2 class="section-title">Why FoodBank?</h2>
+        <p class="section-description">We bridge the gap between food abundance and severe hunger with technology.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="custom-card p-4">
+            <div class="card-icon-bubble bubble-green mb-3">
+              <i class="fa-solid fa-recycle"></i>
+            </div>
+            <h4 class="fw-bold mb-2">Reduce Food Waste</h4>
+            <p class="text-muted small">
+              Over 40% of food prepared at weddings and banquets is discarded. We redirect perfectly good food from landfills.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="custom-card p-4">
+            <div class="card-icon-bubble bubble-orange mb-3">
+              <i class="fa-solid fa-people-roof"></i>
+            </div>
+            <h4 class="fw-bold mb-2">Help Communities</h4>
+            <p class="text-muted small">
+              Ensure children, senior citizens, and daily wage workers get nutritious meals whenever food is surplus.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="custom-card p-4">
+            <div class="card-icon-bubble bubble-green mb-3">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <h4 class="fw-bold mb-2">Easy Food Donation</h4>
+            <p class="text-muted small">
+              Donating takes less than 2 minutes on our mobile-ready website. No cumbersome red tape or long approvals.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="custom-card p-4">
+            <div class="card-icon-bubble bubble-orange mb-3">
+              <i class="fa-solid fa-earth-americas"></i>
+            </div>
+            <h4 class="fw-bold mb-2">Build a Better Future</h4>
+            <p class="text-muted small">
+              Every meal saved lowers greenhouse gas emissions and fosters a culture of empathy and community care.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent Donations Section -->
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-between align-items-end mb-4">
+        <div>
+          <span class="section-tag">Live Activity</span>
+          <h2 class="section-title mb-0">Recent Food Donations</h2>
+        </div>
+        <a href="find-food.html" class="btn btn-food-outline mt-3 mt-md-0">
+          View All Listings <i class="fa-solid fa-arrow-right ms-1"></i>
+        </a>
+      </div>
+
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="food-item-card">
+            <div class="food-card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=600&q=80" alt="Vegetable Biryani">
+              <div class="card-top-badges">
+                <span class="badge-pill-soft badge-tag-veg"><i class="fa-solid fa-circle text-success" style="font-size: 8px;"></i> Vegetarian</span>
+                <span class="servings-tag"><i class="fa-solid fa-utensils me-1"></i> 150 Servings</span>
+              </div>
+            </div>
+            <div class="food-card-body">
+              <h5 class="food-card-title">Vegetable Biryani &amp; Raita</h5>
+              <ul class="food-meta-list">
+                <li><i class="fa-solid fa-location-dot"></i> Vadodara (Alkapuri)</li>
+                <li><i class="fa-regular fa-clock"></i> Pickup: Today, 8:00 PM</li>
+                <li><i class="fa-solid fa-circle-check text-success"></i> Cooked Banquet Surplus</li>
+              </ul>
+              <div class="food-card-footer">
+                <span class="badge-pill-soft badge-tag-available">Available</span>
+                <a href="find-food.html" class="btn btn-sm btn-food-primary">Request Food</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="food-item-card">
+            <div class="food-card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=600&q=80" alt="Rice & Dal">
+              <div class="card-top-badges">
+                <span class="badge-pill-soft badge-tag-veg"><i class="fa-solid fa-circle text-success" style="font-size: 8px;"></i> Vegetarian</span>
+                <span class="servings-tag"><i class="fa-solid fa-utensils me-1"></i> 100 Servings</span>
+              </div>
+            </div>
+            <div class="food-card-body">
+              <h5 class="food-card-title">Steamed Rice &amp; Yellow Dal</h5>
+              <ul class="food-meta-list">
+                <li><i class="fa-solid fa-location-dot"></i> Ahmedabad (Navrangpura)</li>
+                <li><i class="fa-regular fa-clock"></i> Pickup: Tomorrow, 12:00 PM</li>
+                <li><i class="fa-solid fa-circle-check text-success"></i> Corporate Cafeteria Food</li>
+              </ul>
+              <div class="food-card-footer">
+                <span class="badge-pill-soft badge-tag-available">Available</span>
+                <a href="find-food.html" class="btn btn-sm btn-food-primary">Request Food</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="food-item-card">
+            <div class="food-card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1584278433434-2e6840673d32?auto=format&fit=crop&w=600&q=80" alt="Packed Meals">
+              <div class="card-top-badges">
+                <span class="badge-pill-soft badge-tag-veg"><i class="fa-solid fa-circle text-success" style="font-size: 8px;"></i> Vegetarian</span>
+                <span class="servings-tag"><i class="fa-solid fa-utensils me-1"></i> 80 Servings</span>
+              </div>
+            </div>
+            <div class="food-card-body">
+              <h5 class="food-card-title">Hygienic Packed Meal Boxes</h5>
+              <ul class="food-meta-list">
+                <li><i class="fa-solid fa-location-dot"></i> Vadodara (Manjalpur)</li>
+                <li><i class="fa-regular fa-clock"></i> Pickup: Today, 6:00 PM</li>
+                <li><i class="fa-solid fa-circle-check text-success"></i> Sealed Box Packs (Roti/Sabzi)</li>
+              </ul>
+              <div class="food-card-footer">
+                <span class="badge-pill-soft badge-tag-available">Available</span>
+                <a href="find-food.html" class="btn btn-sm btn-food-primary">Request Food</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="section-padding pt-0 bg-white">
+    <div class="container">
+      <div class="cta-banner-section text-center text-md-start">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8">
+            <span class="badge bg-warning text-dark fw-bold px-3 py-2 rounded-pill mb-3">Join The Movement</span>
+            <h2 class="display-6 fw-bold text-white mb-3">Have Extra Food? Give It a Purpose.</h2>
+            <p class="text-white-50 fs-5 mb-0" style="max-width: 600px;">
+              Don’t let nutritious meals go to waste. In just a few clicks, you can ensure a family in your city sleeps with a full stomach tonight.
+            </p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <div class="d-flex flex-column flex-sm-row justify-content-lg-end gap-3">
+              <a href="donate.html" class="btn btn-light btn-lg text-success fw-bold px-4 py-3 shadow">
+                <i class="fa-solid fa-plus-circle text-success me-1"></i> Donate Food Now
+              </a>
+              <a href="register.html" class="btn btn-food-accent btn-lg px-4 py-3 shadow">
+                <i class="fa-solid fa-handshake-angle me-1"></i> Join as NGO
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a class="footer-brand" href="index.html">
+            <div class="brand-icon-box" style="width: 36px; height: 36px; font-size: 1rem;">
+              <i class="fa-solid fa-hand-holding-heart"></i>
+            </div>
+            <span>FOOD<span class="text-warning">BANK</span></span>
+          </a>
+          <p class="footer-desc mt-2">
+            “Share Food. Reduce Waste. Feed Hope.”<br>
+            A technology-driven food recovery platform bridging the divide between excess meals and empty plates.
+          </p>
+          <div class="mt-3">
+            <a href="#" class="social-circle-link"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-circle-link"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-circle-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-circle-link"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="donate.html">Donate Food</a></li>
+            <li><a href="find-food.html">Find Food</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading">Portals</h5>
+          <ul class="footer-links">
+            <li><a href="dashboard.html">Donor Dashboard</a></li>
+            <li><a href="login.html">Login / Portal</a></li>
+            <li><a href="register.html">Volunteer Register</a></li>
+            <li><a href="contact.html">Help &amp; Support</a></li>
+            <li><a href="contact.html">Partner Inquiries</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <h5 class="footer-heading">Contact &amp; Location</h5>
+          <ul class="footer-links">
+            <li class="d-flex align-items-start gap-2">
+              <i class="fa-solid fa-location-dot mt-1 text-warning"></i>
+              <span>104 Hope Avenue, Sayajigunj, Vadodara, Gujarat 390005</span>
+            </li>
+            <li class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-phone text-warning"></i>
+              <span>+91 98765 43210 / 1800-FOOD-HOPE</span>
+            </li>
+            <li class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-envelope text-warning"></i>
+              <span>contact@foodbank.org</span>
+            </li>
+            <li class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-clock text-warning"></i>
+              <span>24/7 Food Rescue Helpline Active</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar text-center">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-md-start mb-2 mb-md-0">
+            &copy; 2026 <strong>FoodBank</strong>. College Web Development Technology Project.
+          </div>
+          <div class="col-md-6 text-md-end">
+            <span class="text-white-50">Designed with HTML5, CSS3, JavaScript &amp; Bootstrap</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Shared JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>

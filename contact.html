@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - FoodBank | Get in Touch</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Custom Shared CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement-bar">
+    <span><i class="fa-solid fa-leaf me-1 text-warning"></i> Over <strong>10,000+</strong> meals saved this month! Every meal counts.</span>
+    <a href="donate.html">Donate Extra Food Now &rarr;</a>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg main-navbar">
+    <div class="container">
+      <a class="navbar-brand navbar-brand-logo" href="index.html">
+        <div class="brand-icon-box">
+          <i class="fa-solid fa-hand-holding-heart"></i>
+        </div>
+        <span>FOOD<span class="brand-accent-text">BANK</span></span>
+      </a>
+
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMainContent" aria-controls="navbarMainContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarMainContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="donate.html">Donate Food</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="find-food.html">Find Food</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="how-it-works.html">How It Works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <div class="d-flex align-items-center gap-2">
+          <a href="login.html" class="btn btn-food-outline px-3 py-2">
+            <i class="fa-regular fa-user"></i> Login
+          </a>
+          <a href="donate.html" class="btn btn-food-primary px-3 py-2">
+            <i class="fa-solid fa-plus-circle"></i> Donate Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Hero Section -->
+  <section class="py-5 bg-white border-bottom">
+    <div class="container text-center" style="max-width: 720px;">
+      <span class="section-tag">We Are Here To Help</span>
+      <h1 class="section-title mb-2">Contact FoodBank</h1>
+      <p class="section-description">
+        Have questions regarding food pickups, partnership opportunities, or volunteering? Reach out to our 24/7 dedicated support desk.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Contact Section -->
+  <section class="section-padding section-subtle">
+    <div class="container">
+
+      <!-- Success Alert (Hidden by default, triggered by JS) -->
+      <div id="contactSuccessToast" class="alert alert-success alert-dismissible fade show d-none mb-4 p-4 rounded-4 shadow-sm" role="alert">
+        <div class="d-flex align-items-center gap-3">
+          <i class="fa-solid fa-circle-check fa-2x text-success"></i>
+          <div>
+            <h5 class="fw-bold mb-1">Message Sent Successfully!</h5>
+            <p class="mb-0 text-muted">Thank you for reaching out. A FoodBank coordinator will respond to your email within 2-4 hours.</p>
+          </div>
+        </div>
+        <button type="button" class="btn-close" onclick="document.getElementById('contactSuccessToast').classList.add('d-none');"></button>
+      </div>
+
+      <div class="row g-5">
+
+        <!-- Contact Form Column -->
+        <div class="col-lg-7">
+          <div class="custom-form-card">
+            <h3 class="fw-bold text-dark mb-2">Send Us a Message</h3>
+            <p class="text-muted small mb-4">Complete this quick inquiry form and our regional coordinator will be in touch.</p>
+
+            <form id="contactUsForm" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label" for="contactName">Full Name <span class="text-danger">*</span></label>
+                  <div class="input-icon-group">
+                    <i class="fa-regular fa-user"></i>
+                    <input type="text" class="form-control" id="contactName" placeholder="Your Name" required>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label" for="contactEmail">Email Address <span class="text-danger">*</span></label>
+                  <div class="input-icon-group">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" class="form-control" id="contactEmail" placeholder="yourname@gmail.com" required>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label class="form-label" for="contactSubject">Subject <span class="text-danger">*</span></label>
+                  <div class="input-icon-group">
+                    <i class="fa-solid fa-tag"></i>
+                    <input type="text" class="form-control" id="contactSubject" placeholder="e.g. Wedding Banquet Bulk Donation / NGO Partnership" required>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label class="form-label" for="contactMessage">Message <span class="text-danger">*</span></label>
+                  <textarea class="form-control" id="contactMessage" rows="5" placeholder="Write your inquiry or requirement here..." required></textarea>
+                </div>
+
+                <div class="col-12 pt-2">
+                  <button type="submit" class="btn btn-food-primary btn-lg w-100 shadow">
+                    <i class="fa-regular fa-paper-plane"></i> Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Contact Info & Quick Details Column -->
+        <div class="col-lg-5">
+          <div class="row g-3">
+
+            <!-- Address Card -->
+            <div class="col-12">
+              <div class="custom-card p-4">
+                <div class="d-flex align-items-start gap-3">
+                  <div class="card-icon-bubble bubble-green mb-0 flex-shrink-0">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div>
+                    <h6 class="fw-bold mb-1 text-dark">Headquarters Address</h6>
+                    <p class="text-muted small mb-0">
+                      104 Hope Avenue, Sayajigunj, Vadodara, Gujarat 390005, India
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Email Card -->
+            <div class="col-12">
+              <div class="custom-card p-4">
+                <div class="d-flex align-items-start gap-3">
+                  <div class="card-icon-bubble bubble-orange mb-0 flex-shrink-0">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div>
+                    <h6 class="fw-bold mb-1 text-dark">Email Inquiries</h6>
+                    <p class="text-muted small mb-0">
+                      General: <a href="mailto:contact@foodbank.org" class="text-success fw-semibold">contact@foodbank.org</a><br>
+                      Partnerships: <a href="mailto:partners@foodbank.org" class="text-success fw-semibold">partners@foodbank.org</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Phone Card -->
+            <div class="col-12">
+              <div class="custom-card p-4">
+                <div class="d-flex align-items-start gap-3">
+                  <div class="card-icon-bubble bubble-green mb-0 flex-shrink-0">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <div>
+                    <h6 class="fw-bold mb-1 text-dark">Phone &amp; Emergency Helpline</h6>
+                    <p class="text-muted small mb-0">
+                      Toll Free: <strong>1800-FOOD-HOPE</strong><br>
+                      Direct: +91 98765 43210 / +91 265 2345678
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Working Hours Card -->
+            <div class="col-12">
+              <div class="custom-card p-4">
+                <div class="d-flex align-items-start gap-3">
+                  <div class="card-icon-bubble bubble-orange mb-0 flex-shrink-0">
+                    <i class="fa-solid fa-clock"></i>
+                  </div>
+                  <div>
+                    <h6 class="fw-bold mb-1 text-dark">Working Hours</h6>
+                    <p class="text-muted small mb-0">
+                      Food Emergency Helpline: <strong>24 Hours / 7 Days</strong><br>
+                      Volunteer Hub Office: Mon - Sun (8:00 AM - 10:00 PM)
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Map-Style Visual Placeholder -->
+      <div class="mt-5">
+        <div class="custom-card p-0 overflow-hidden shadow">
+          <div class="p-3 bg-white border-bottom d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-map-location-dot text-success"></i>
+              <span class="fw-bold text-dark">FoodBank Regional Operations Center — Vadodara</span>
+            </div>
+            <span class="badge bg-success-subtle text-success">Hub Status: Active</span>
+          </div>
+
+          <!-- Stylized Interactive Map Frame Placeholder -->
+          <div class="position-relative" style="height: 340px; background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%);">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59049.20869681467!2d73.14820297053075!3d22.316886475727906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc8ab91a3ddab%3A0xac39d3bfe1473fb8!2sSayajigunj%2C%20Vadodara%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+              width="100%"
+              height="340"
+              style="border:0; filter: contrast(105%) saturate(90%);"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div class="position-absolute bottom-0 start-0 m-3 p-3 bg-white rounded-3 shadow border d-none d-md-block" style="max-width: 300px;">
+              <div class="fw-bold text-dark small"><i class="fa-solid fa-location-dot text-danger me-1"></i> Sayajigunj Dispatch Center</div>
+              <div class="text-muted" style="font-size: 0.78rem;">Serving Vadodara, Anand, and surrounding rural feeding shelters.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a class="footer-brand" href="index.html">
+            <div class="brand-icon-box" style="width: 36px; height: 36px; font-size: 1rem;">
+              <i class="fa-solid fa-hand-holding-heart"></i>
+            </div>
+            <span>FOOD<span class="text-warning">BANK</span></span>
+          </a>
+          <p class="footer-desc mt-2">
+            “Share Food. Reduce Waste. Feed Hope.”<br>
+            A technology-driven food recovery platform bridging the divide between excess meals and empty plates.
+          </p>
+          <div class="mt-3">
+            <a href="#" class="social-circle-link"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-circle-link"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-circle-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-circle-link"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="donate.html">Donate Food</a></li>
+            <li><a href="find-food.html">Find Food</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading">Portals</h5>
+          <ul class="footer-links">
+            <li><a href="dashboard.html">Donor Dashboard</a></li>
+            <li><a href="login.html">Login / Portal</a></li>
+            <li><a href="register.html">Volunteer Register</a></li>
+            <li><a href="contact.html">Help &amp; Support</a></li>
+            <li><a href="contact.html">Partner Inquiries</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <h5 class="footer-heading">Contact &amp; Location</h5>
+          <ul class="footer-links">
+            <li class="d-flex align-items-start gap-2">
+              <i class="fa-solid fa-location-dot mt-1 text-warning"></i>
+              <span>104 Hope Avenue, Sayajigunj, Vadodara, Gujarat 390005</span>
+            </li>
+            <li class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-phone text-warning"></i>
+              <span>+91 98765 43210 / 1800-FOOD-HOPE</span>
+            </li>
+            <li class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-envelope text-warning"></i>
+              <span>contact@foodbank.org</span>
+            </li>
+            <li class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-clock text-warning"></i>
+              <span>24/7 Food Rescue Helpline Active</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar text-center">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-md-start mb-2 mb-md-0">
+            &copy; 2026 <strong>FoodBank</strong>. College Web Development Technology Project.
+          </div>
+          <div class="col-md-6 text-md-end">
+            <span class="text-white-50">Designed with HTML5, CSS3, JavaScript &amp; Bootstrap</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Shared JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
